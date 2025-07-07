@@ -18,6 +18,7 @@ type CustomMagicWANGRETunnelModel struct {
 	CloudflareGREEndpoint types.String                                                `tfsdk:"cloudflare_gre_endpoint" json:"cloudflare_gre_endpoint,required"`
 	CustomerGREEndpoint   types.String                                                `tfsdk:"customer_gre_endpoint" json:"customer_gre_endpoint,required"`
 	InterfaceAddress      types.String                                                `tfsdk:"interface_address" json:"interface_address,required"`
+	InterfaceAddress6     types.String                                                `tfsdk:"interface_address6" json:"interface_address6,optional"`
 	Name                  types.String                                                `tfsdk:"name" json:"name,required"`
 	Description           types.String                                                `tfsdk:"description" json:"description,optional"`
 	Mtu                   types.Int64                                                 `tfsdk:"mtu" json:"mtu,computed_optional"`

@@ -43,6 +43,10 @@ func customResourceSchema(ctx context.Context) schema.Schema {
 				Description: "A 31-bit prefix (/31 in CIDR notation) supporting two hosts, one for each side of the tunnel. Select the subnet from the following private IP space: 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255, 192.168.0.0–192.168.255.255.",
 				Required:    true,
 			},
+			"interface_address6": schema.StringAttribute{
+				Description: "interface address V6",
+				Optional:    true,
+			},
 			"name": schema.StringAttribute{
 				Description: "The name of the tunnel. The name cannot contain spaces or special characters, must be 15 characters or less, and cannot share a name with another GRE tunnel.",
 				Required:    true,

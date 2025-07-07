@@ -17,6 +17,7 @@ type CustomMagicWANIPSECTunnelModel struct {
 	AccountID          types.String                                                  `tfsdk:"account_id" path:"account_id,required"`
 	CloudflareEndpoint types.String                                                  `tfsdk:"cloudflare_endpoint" json:"cloudflare_endpoint,required"`
 	InterfaceAddress   types.String                                                  `tfsdk:"interface_address" json:"interface_address,required"`
+	InterfaceAddress6  types.String                                                  `tfsdk:"interface_address6" json:"interface_address6,optional"`
 	Name               types.String                                                  `tfsdk:"name" json:"name,required"`
 	CustomerEndpoint   types.String                                                  `tfsdk:"customer_endpoint" json:"customer_endpoint,optional"`
 	Description        types.String                                                  `tfsdk:"description" json:"description,optional"`
